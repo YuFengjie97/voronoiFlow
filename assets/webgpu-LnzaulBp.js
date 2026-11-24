@@ -1,0 +1,1 @@
+import{D as e,a as t,c as n,i as r,l as i,n as a,o,r as s,s as c,t as l}from"./index-Dh_z7nd6.js";var u={kind:`webgpu`,three:r,Renderer:s,RenderTarget:e,CubeRenderTarget:t,CanvasTarget:l,occlusion:{Node:o,NodeUpdateType:c,MeshBasicNodeMaterial:a,uniform:i,nodeObject:n}};export{u as webgpuSupport};
