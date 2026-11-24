@@ -1,6 +1,6 @@
 import { useTexture } from '@react-three/drei'
 import { useFrame, useThree } from '@react-three/fiber'
-import { useEffect, useMemo, useState } from 'react'
+import { useEffect, useMemo } from 'react'
 import { smoothstep, Fn, hash, If, instancedArray, instanceIndex, positionLocal, sin, texture, uniform, vec2, vec3, fract, uv, length } from 'three/tsl'
 import * as THREE from 'three/webgpu'
 
@@ -11,11 +11,11 @@ export function Particle() {
   const uvScale = uniform(2.)
   const lifeSpeed = uniform(.01)
 
-  const [particleSize, setParticleSize] = useState(.03)
+  const particleSize = .03
 
   const renderer = useThree((state) => state.renderer)
 
-  const texV = useTexture('/img/Techno 9 - 512x512.png')
+  const texV = useTexture(`${import.meta.env.BASE_URL}img/Techno 9 - 512x512.png`)
 
 
   const { positionNode, colorNode, initPos, update } = useMemo(() => {
